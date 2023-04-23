@@ -21,6 +21,11 @@ const routers = [
     name: "Weather",
     component: () => import("../views/demos/weather.vue"),
   },
+  {
+    path: "/list",
+    name: "List",
+    component: () => import("../views/demos/list.vue"),
+  },
 ];
 
 export default createRouter({

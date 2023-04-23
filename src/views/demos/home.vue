@@ -1,6 +1,6 @@
 <template>
     <div class="p-4 bg-gray-50 h-100vh">
-        <van-cell-group title="Vue3-Demos" inset>
+        <van-cell-group title="Vue3-Hooks-Demo" inset>
             <van-cell v-for="(item,index) in demos" 
                 :key="index" 
                 :title="item.name" 
@@ -17,6 +17,7 @@
 const demos = [
     { name: "useRealTime()", path: "/realtime",text:"Hooks封装实例" },
     { name: "useWeatherInfo()", path: "/weather" ,text:"结合异步请求"},
+    { name: "usePaginationQuery()", path: "/list" ,text:"分页逻辑抽离"},
 ];
 </script>
 <style lang='scss'>

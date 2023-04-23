@@ -1,22 +1,23 @@
+export interface WeatherCasts{
+    date:string,
+    daypower:number,
+    daytemp:number,
+    daytemp_float:string,
+    dayweather:string,
+    daywind:string,
+    nightpower:string,
+    nighttemp:string
+    nighttemp_float:string
+    nightweather:string
+    nightwind:string
+    week:string
+}
 /**
  * 预报信息数据项
  */
- interface Forecasts{
+ export interface Forecasts{
     adcode:string
-    casts:{
-        date:string,
-        daypower:number,
-        daytemp:number,
-        daytemp_float:string,
-        dayweather:string,
-        daywind:string,
-        nightpower:string,
-        nighttemp:string
-        nighttemp_float:string
-        nightweather:string
-        nightwind:string
-        week:string
-    },
+    casts:WeatherCasts[],
     city:string
     province:string
     reporttime:string
